@@ -5,27 +5,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Parus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: false
+        });
+
+        const swiperCards = new Swiper('.swiper-cards', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: false
+        });
+    </script>
+
     <div class="wrapper">
         <header class="header">
-            <h1>Casa Parus</h1>
-            <nav class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="nav__link">Testemonials</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Gallery</a></li>
-                    <li class="nav__item nav__item-cta"><a href="" class="nav__link">Book now</a></li>
-                </ul>
-            </nav>
+            <h1 class="header-logo">Casa Parus</h1>
         </header>
 
         <main class="content">
-            <div class="container hero"></div>
-            <div class="container testimonials"></div>
-            <div class="container gallery"></div>
-            <div class="container hero"></div>
-            <div class="container book"></div>
+            <div class="hero">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide-alt">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="./img/hero-1_desk.jpg">
+                                <img src="./img/hero-1.jpg" alt="photo" class="swiper-img" style="width:auto;">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide swiper-slide-alt">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="./img/hero-2_desk.jpg">
+                                <img src="./img/hero-2.jpg" alt="photo" class="swiper-img" style="width:auto;">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide swiper-slide-alt">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="./img/hero-3_desk.jpg">
+                                <img src="./img/hero-3.jpg" alt="photo" class="swiper-img" style="width:auto;">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide swiper-slide-alt">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="./img/hero-4_desk.jpg">
+                                <img src="./img/hero-4.jpg" alt="photo" class="swiper-img" style="width:auto;">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide swiper-slide-alt">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="./img/hero-5_desk.jpg">
+                                <img src="./img/hero-5.jpg" alt="photo" class="swiper-img" style="width:auto;">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container intro">
+                <h2>Enjoy your time in a relaxing and calm mini-oasis</h2>
+                <h3>A modern and relaxing villa, suited for your relaxing and stress free vacations, on the beautiful coats of Comporta.</h3>
+                <p>"Hello everyone! We are the Machado's family. For 23 years we have kept and nurtured this family gem that we call Casa Parus, and we are so proud to say that so many families have enjoyed their time here in the house. Our main goal and happiness is for you and your family to create beautiful and core memories here, while enjoying a relaxing and "reset" time that we all much needed.</p>
+            </div>
+            <div class="container testimonials">
+                <h3>Here are some beautiful testimonials of families that have been to Casa Parus:</h3>
+                <div class="testimons">
+                    <p>"I deeply enjoyed my stay at Casa Parus, the host are a lovely couple, they are very nice and acommodated to every need or request we had, Their house is so lovely and the view is beyond relaxing. Will for aure return" - Antonio Ramos</p>
+                    <p>"If you are looking for a place to completely relax and take your mind out of the day-to-day problems, this is the place to go: beautiful location, the house is amazing and if you have kids, they will for sure love the pool time!" - Monica Esteves</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <h2>The house from up close...</h2>
+                <h3>Explore the house from up close, and see the wonders each division holds for you!</h3>
+
+                <div class="swiper-cards">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn800">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
+                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
+                          <h2>QN800</h2>
+                          <h3>Max 3pax</h3>
+                          <p>Lorem ipsum text</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+            </div>
+            
+            <div class="container book">
+                <h2>Want to spend your vacations in Casa Parus?</h2>
+                <p>You are one step away from being able to do it - please fill in the form bellow, as soon as possible we will reach back to you with further details and availability for the days you picked.</p>
+                <form action="" class="form">
+                    <div class="form-text">
+                        <label for="">Your name</label>
+                        <input type="text" required>
+                        <label for="">Your email</label>
+                        <input type="text" required>
+                        <label for="">Your phone contact</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-time">
+                        <label for="">Prefered contact time:</label>
+                    </div>
+                    <input type="radio" id="am" name="time_contact" value="Before 12am" required>
+                    <label>Before 12am</label><br>
+                    <input type="radio" id="noon" name="time_contact" value="Betwen 3pm and 6pm" required>
+                    <label>Betwen 3pm and 6pm</label><br>
+                    <input type="radio" id="night" name="time_contact" value="After 8pm" required>
+                    <label>After 8pm</label><br><br>
+                    <button>Submit</button>
+                </form>
+            </div>
         </main>
 
         <footer class="footer">
