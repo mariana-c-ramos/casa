@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +29,10 @@
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        autoplay: false
+        autoplay: false,
+        pagination: {
+            el: '.swiper-pagination',
+        },
         });
     </script>
 
@@ -52,12 +56,6 @@
                         </div>
                         <div class="swiper-slide swiper-slide-alt">
                             <picture>
-                                <source media="(min-width:650px)" srcset="./img/hero-2_desk.jpg">
-                                <img src="./img/hero-2.jpg" alt="photo" class="swiper-img" style="width:auto;">
-                            </picture>
-                        </div>
-                        <div class="swiper-slide swiper-slide-alt">
-                            <picture>
                                 <source media="(min-width:650px)" srcset="./img/hero-3_desk.jpg">
                                 <img src="./img/hero-3.jpg" alt="photo" class="swiper-img" style="width:auto;">
                             </picture>
@@ -68,21 +66,16 @@
                                 <img src="./img/hero-4.jpg" alt="photo" class="swiper-img" style="width:auto;">
                             </picture>
                         </div>
-                        <div class="swiper-slide swiper-slide-alt">
-                            <picture>
-                                <source media="(min-width:650px)" srcset="./img/hero-5_desk.jpg">
-                                <img src="./img/hero-5.jpg" alt="photo" class="swiper-img" style="width:auto;">
-                            </picture>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="container intro">
                 <h2>Enjoy your time in a relaxing and calm mini-oasis</h2>
                 <h3>A modern and relaxing villa, suited for your relaxing and stress free vacations, on the beautiful coats of Comporta.</h3>
-                <p>"Hello everyone! We are the Machado's family. For 23 years we have kept and nurtured this family gem that we call Casa Parus, and we are so proud to say that so many families have enjoyed their time here in the house. Our main goal and happiness is for you and your family to create beautiful and core memories here, while enjoying a relaxing and "reset" time that we all much needed.</p>
+                <p>"Hello everyone! We are the Machado's family. For 23 years we have kept and nurtured this family gem that we call Casa Parus, and we are so proud to say that so many families have enjoyed their time here in the house. Our main goal and happiness is for you and your family to create beautiful and core memories here, while enjoying a relaxing and "reset" time that we all much needed."</p>
+                <img src="./img/intro-img.jpg" alt="">
             </div>
-            <div class="container testimonials">
+            <div class="testimonials">
                 <h3>Here are some beautiful testimonials of families that have been to Casa Parus:</h3>
                 <div class="testimons">
                     <p>"I deeply enjoyed my stay at Casa Parus, the host are a lovely couple, they are very nice and acommodated to every need or request we had, Their house is so lovely and the view is beyond relaxing. Will for aure return" - Antonio Ramos</p>
@@ -93,63 +86,114 @@
                 <h2>The house from up close...</h2>
                 <h3>Explore the house from up close, and see the wonders each division holds for you!</h3>
 
+                <!-- MOBILE-->
                 <div class="swiper-cards">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn800">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-room-1.jpg">
+                          <h3>Master Bedroom (2pax)</h3>
+                          <p>Confortable room with a lot of natural light.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-room-2.jpg">
+                          <h3>Bedroom (2pax)</h3>
+                          <p>Another room, with a double bed.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-room-kids.jpg">
+                          <h3>Kids Bedroom (5pax)</h3>
+                          <p>For the little ones, a room fully adapt for kids.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-bathroom.jpg">
+                          <h3>Bathrooms</h3>
+                          <p>Fully equiped and with a modern style.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-livingroom.jpg">
+                          <h3>Living Room</h3>
+                          <p>For late night gatherings and to rest after a long day.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="slide-wrapper" data-value="QN800" id="card__qn900">
-                          <img class="slide-img" src="./img/8k_b.webp" alt="QN900">
-                          <h2>QN800</h2>
-                          <h3>Max 3pax</h3>
-                          <p>Lorem ipsum text</p>
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-kitchen.jpg">
+                          <h3>Kitchen</h3>
+                          <p>Cook meals with your loved ones here.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-deck.jpg">
+                          <h3>Outside Deck</h3>
+                          <p>Enjoy a little relaxation moment in this little oasis.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-wrapper">
+                          <img class="slide-img" src="./img/gallery-pool.jpg">
+                          <h3>Pool</h3>
+                          <p>The the diamond of the house - whre all the fun happens.</p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                
+                </div>
 
+                <!--DESKTOP-->
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-room-1.jpg">
+                        <h3>Master Bedroom (2pax)</h3>
+                        <p>Confortable room with a lot of natural light.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-room-2.jpg">
+                        <h3>Bedroom (2pax)</h3>
+                        <p>Another room, with a double bed.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-room-kids.jpg">
+                        <h3>Kids Bedroom (5pax)</h3>
+                        <p>For the little ones, a room fully adapt for kids.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-bathroom.jpg">
+                        <h3>Bathrooms</h3>
+                        <p>Fully equiped and with a modern style.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-livingroom.jpg">
+                        <h3>Living Room</h3>
+                        <p>For late night gatherings and to rest after a long day.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-kitchen.jpg">
+                        <h3>Kitchen</h3>
+                        <p>Cook meals with your loved ones here.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-deck.jpg">
+                        <h3>Outside Deck</h3>
+                        <p>Enjoy a little relaxation moment in this little oasis.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./img/gallery-pool.jpg">
+                        <h3>Pool</h3>
+                        <p>The the diamond of the house - whre all the fun happens.</p>
+                    </div>
+                </div>
             </div>
             
-            <div class="container book">
+            <div class="book">
                 <h2>Want to spend your vacations in Casa Parus?</h2>
                 <p>You are one step away from being able to do it - please fill in the form bellow, as soon as possible we will reach back to you with further details and availability for the days you picked.</p>
                 <form action="" class="form">
@@ -176,11 +220,6 @@
         </main>
 
         <footer class="footer">
-            <div class="socials">
-                <img src="" alt="" class="social ig">
-                <img src="" alt="" class="social lk">
-                <img src="" alt="" class="social wb">
-            </div>
             <div class="copyrights">Made by YDigital Media @ 2023</div>
         </footer>
 
