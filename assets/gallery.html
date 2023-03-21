@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Parus - Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header-logo">Casa Parus</h1>
+            <a class="header-nav" href="../index.html">Home</a>
+        </header>
+
+        <main class="content">
+            <div class="main__gallery">
+                <img class="main__gallery-img" src="../img/hero-1.jpg">
+                <img class="main__gallery-img" src="../img/hero-2.jpg">
+                <img class="main__gallery-img" src="../img/hero-3.jpg">
+                <img class="main__gallery-img" src="../img/hero-4.jpg">
+                <img class="main__gallery-img" src="../img/gallery-room-1.jpg">
+                <img class="main__gallery-img" src="../img/gallery-room-2.jpg">
+                <img class="main__gallery-img" src="../img/gallery-room-kids.jpg">
+                <img class="main__gallery-img" src="../img/gallery-bathroom.jpg">
+                <img class="main__gallery-img" src="../img/gallery-livingroom.jpg">
+                <img class="main__gallery-img" src="../img/gallery-kitchen.jpg">
+                <img class="main__gallery-img" src="../img/gallery-deck.jpg">
+                <img class="main__gallery-img" src="../img/gallery-pool.jpg">
+            </div> 
+
+            <div class="book">
+                <h2>Want to spend your vacations in Casa Parus?</h2>
+                <p>You are one step away from being able to do it - please fill in the form bellow, as soon as possible we will reach back to you with further details and availability for the days you picked.</p>
+                <form action="" class="form">
+                    <div class="form-text">
+                        <label for="">Your name</label>
+                        <input type="text" required>
+                        <label for="">Your email</label>
+                        <input type="text" required>
+                        <label for="">Your phone contact</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-time">
+                        <label for="">Prefered contact time:</label>
+                    </div>
+                    <input type="radio" id="am" name="time_contact" value="Before 12am" required>
+                    <label>Before 12am</label><br>
+                    <input type="radio" id="noon" name="time_contact" value="Betwen 3pm and 6pm" required>
+                    <label>Betwen 3pm and 6pm</label><br>
+                    <input type="radio" id="night" name="time_contact" value="After 8pm" required>
+                    <label>After 8pm</label><br><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="copyrights">Made by YDigital Media @ 2023</div>
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
