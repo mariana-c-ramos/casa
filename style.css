@@ -15,6 +15,7 @@ body{
 .gallery{
     margin-top: 80px;
     padding: 2rem .5rem;
+    overflow-x: hidden;
 }
 .book{
     margin-top: 80px;
