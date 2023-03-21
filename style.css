@@ -31,6 +31,11 @@ h2{
 h3{
     color: rgba(178, 218, 247, 0.801);
 }
+h4{
+    color: rgba(129, 129, 129, 0.801);
+    text-decoration: underline;
+    margin: 0;
+}
 
 .header{
     height: 80px;
@@ -67,7 +72,7 @@ h3{
     object-fit: contain;
     text-align: left;
     background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     margin: 0 auto;
     overflow: hidden;
@@ -88,9 +93,37 @@ h3{
     object-fit: contain;
 }
 
+.house__info h2{
+    margin-top: 80px;
+}
+.house__comodities,
+.house__pricing{
+    text-align: left;
+}
+.house__comodities ul{
+    padding: 0;
+}
+.house__comodities h3,
+.house__pricing h3{
+    margin-top: 60px;
+}
+.house__pricing .range{
+    margin-bottom: 30px;
+}
+.house__pricing .range p{
+    margin: 0px;
+}
+.house__pricing .range .range__season{
+    color: rgb(66, 120, 156);
+}
+
 .form-text{
     display: flex;
     flex-direction: column;
+}
+.booking_amount{
+    font-weight: bold;
+    font-style: italic;
 }
 .footer{
     margin: 20px auto;
@@ -190,6 +223,36 @@ h3{
     .card h3,
     .card p{
         margin: 10px 5px;
+    }
+    .house__details{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .house__comodities h3,
+    .house__pricing h3{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .house__pricing .range{
+        margin-bottom: 30px;
+    }
+    .house__pricing .range p{
+        margin: 0px;
+    }
+    .house__pricing .range .range__season{
+        color: rgb(66, 120, 156);
+    }
+    .booking{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .booking img{
+        width: 50%;
+    }
+    .booking img,
+    .booking form{
+        margin-top: 30px;
     }
     /* GALLERY */
     .main__gallery{

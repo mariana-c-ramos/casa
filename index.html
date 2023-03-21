@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,6 +26,7 @@
 
         const swiperCards = new Swiper('.swiper-cards', {
         // Optional parameters
+        slidesPerView: 1.05,
         direction: 'horizontal',
         loop: true,
         autoplay: false,
@@ -101,7 +101,7 @@
                         <div class="slide-wrapper">
                           <img class="slide-img" src="./img/gallery-room-2.jpg">
                           <h3>Bedroom (2pax)</h3>
-                          <p>Another room, with a double bed.</p>
+                          <p>Another room, with a double bed and all the comodities.</p>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -159,7 +159,7 @@
                     <div class="card">
                         <img class="card-img" src="./img/gallery-room-2.jpg">
                         <h3>Bedroom (2pax)</h3>
-                        <p>Another room, with a double bed.</p>
+                        <p>Another room, with a double bed and all the comodities.</p>
                     </div>
                     <div class="card">
                         <img class="card-img" src="./img/gallery-room-kids.jpg">
@@ -192,30 +192,100 @@
                         <p>The the diamond of the house - whre all the fun happens.</p>
                     </div>
                 </div>
+
+                <div class="house__info">
+                    <h2>Enjoying the house so far?</h2>
+                    <h3>We have compiled a list of all the house benefits and comodities for you to check, as well as the princing ranges.</h3>
+                    <div class="house__details">
+                        <div class="house__comodities">
+                            <h3>House Comodities</h3>
+                            <ul>
+                                <li>Bedroom & bathroom linen changed every week</li>
+                                <li>3 Hairdryers</li>
+                                <li>Baby cot (w/linen) & highchair on request, free of charge</li>
+                                <li>Air conditioning in all rooms</li>
+                                <li>Easy to operate sliding windows with mosquito nets</li>
+                                <li>Cable TV (plasma screens in the suit bedrooms and sitting room)</li>
+                                <li>Free Wi-Fi available</li>
+                                <li>Electric hob & oven, fridge & freezer, microwave</li>
+                                <li>Delta coffee machine, kettle, juice maker, toaster</li>
+                                <li>Dishwasher & washing machine</li>
+                                <li>Portable BBQ</li>
+                                <li>Swimming pool</li>
+                                <li>Loungers & deck chairs</li>
+                                <li>Outdoor shower</li>
+                                <li>Pool towels (1 p/guest p/week provided)</li>
+                                <li>5 adult bicycles</li>
+                                <li>Parking for one car inside property walls</li>
+                            </ul>
+                        </div>
+                        <div class="house__pricing">
+                            <h3>Princing Range</h3>
+                                <div class="range low">
+                                    <p class="range__season">Low-Season - October to May</p>
+                                    <p>3 night minimum stay</p>
+                                    <p>Price per night: 950€</p>
+                                    <p>Weekends: 2550€ (up to 3 nights)</p>
+                                </div>
+                                <div class="range mid">
+                                    <p class="range__season">Mid-Season - June and September plus School Half Term,<br> Christmas and Easter</p>
+                                    <p>7 night minimum stay</p>
+                                    <p>Price per night: 1500€</p>
+                                </div>
+                                <div class="range high">
+                                    <p class="range__season">High-Season - October to May</p>
+                                    <p>7 night minimum stay</p>
+                                    <p>Price per night: 1900€</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>            
             <div class="book">
                 <h2>Want to spend your vacations in Casa Parus?</h2>
                 <p>You are one step away from being able to do it - please fill in the form bellow, as soon as possible we will reach back to you with further details and availability for the days you picked.</p>
-                <form action="" class="form">
-                    <div class="form-text">
-                        <label for="">Your name</label>
-                        <input type="text" required>
-                        <label for="">Your email</label>
-                        <input type="text" required>
-                        <label for="">Your phone contact</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-time">
-                        <label for="">Prefered contact time:</label>
-                    </div>
-                    <input type="radio" id="am" name="time_contact" value="Before 12am" required>
-                    <label>Before 12am</label><br>
-                    <input type="radio" id="noon" name="time_contact" value="Betwen 3pm and 6pm" required>
-                    <label>Betwen 3pm and 6pm</label><br>
-                    <input type="radio" id="night" name="time_contact" value="After 8pm" required>
-                    <label>After 8pm</label><br><br>
-                    <button>Submit</button>
-                </form>
+                <div class="booking">
+                    <img src="./img/calendar.png" alt="">
+                    <form action="" class="form">
+                        <div class="form-text">
+                            <label for="">Your name</label>
+                            <input type="text" required>
+                            <label for="">Your email</label>
+                            <input type="text" required>
+                            <label for="">Your phone contact</label>
+                            <input type="text" required>
+                            <label for="">Adults</label>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                            </select>
+                            <label for="">Kids (bellow 6y)</label>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                            </select>
+                        </div>
+                        <div class="form-time">
+                            <label for="">Prefered contact time:</label>
+                        </div>
+                        <input type="radio" id="am" name="time_contact" value="Before 12am" required>
+                        <label>Before 12am</label><br>
+                        <input type="radio" id="noon" name="time_contact" value="Betwen 3pm and 6pm" required>
+                        <label>Betwen 3pm and 6pm</label><br>
+                        <input type="radio" id="night" name="time_contact" value="After 8pm" required>
+                        <label>After 8pm</label><br><br>
+                        <button>Submit</button>
+                    </form>
+                </div>
             </div>
         </main>
 
