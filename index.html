@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -38,7 +38,13 @@
     <div class="wrapper">
         <header class="header">
             <h1 class="header-logo">Casa Parus</h1>
-            <a class="header-nav" href="./assets/gallery.html">Gallery</a>
+            <div class="menu">
+                <a class="header-nav" href="./assets/gallery.html">Gallery</a>
+                <a class="header-nav" href="#comodoties">What to expect</a>
+                <a class="header-nav" href="#experiences">Experiences</a>
+                <a class="header-nav" href="#reservations">Reservations</a>
+
+            </div>
         </header>
 
         <main class="content">
@@ -71,6 +77,7 @@
             </div>
             <div class="container intro">
                 <h2>Enjoy your time in a relaxing and calm mini-oasis</h2>
+                <h3 style="font-style: italic">From € to €</h3>
                 <h3>A modern and relaxing villa, suited for your relaxing and stress free vacations, on the beautiful coats of Comporta.</h3>
                 <p>"Hello everyone! We are the Machado's family. For 23 years we have kept and nurtured this family gem that we call Casa Parus, and we are so proud to say that so many families have enjoyed their time here in the house. Our main goal and happiness is for you and your family to create beautiful and core memories here, while enjoying a relaxing and "reset" time that we all much needed."</p>
                 <img src="./img/intro-img.jpg" alt="">
@@ -192,6 +199,7 @@
                     </div>
                 </div>
 
+                <div id="comodoties"></div>
                 <div class="house__info">
                     <h2>Enjoying the house so far?</h2>
                     <h3>We have compiled a list of all the house benefits and comodities for you to check, as well as the princing ranges.</h3>
@@ -240,8 +248,13 @@
                     </div>
                 </div>
 
-            </div>            
-            <div class="book">
+            </div>
+            <div class="experiences"></div>  
+            <div id="experiences">
+                <h2>Whant to explore the are around?</h2>
+                <h3>Here's a list of places to visit and restaurants to try out!</h3>
+            </div>        
+            <div class="book" id="reservations">
                 <h2>Want to spend your vacations in Casa Parus?</h2>
                 <p>You are one step away from being able to do it - please fill in the form bellow, as soon as possible we will reach back to you with further details and availability for the days you picked.</p>
                 <div class="booking">
@@ -289,9 +302,12 @@
         </main>
 
         <footer class="footer">
-            <div class="copyrights">Made by YDigital Media @ 2023</div>
+            <div class="contacts">
+                <p>(+351) 911111111</p>
+                <p>| email@email.com</p>
+            </div>
+            <p class="copyrights">Made by YDigital Media @ 2023</p>
         </footer>
-
     </div>
     <script src="app.js"></script>
 </body>
